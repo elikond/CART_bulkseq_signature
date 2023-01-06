@@ -120,4 +120,3 @@ def dim_reduction(prepped_data, engraftment_df):
 all_cohort_pca, FinalData_all_cohort = dim_reduction(ProcessedCounts_all_cohort, all_cohort_engraftment)
 two_cohort_pca, FinalData_two_cohort = dim_reduction(ProcessedCounts_two_cohort, two_cohort_engraftment)
 FinalData_all_cohort.head()
-
