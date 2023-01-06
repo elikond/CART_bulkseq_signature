@@ -57,6 +57,7 @@ for (x in colnames(data)){
   new_df[,x] = qnorm(data[[x]])
 }
 
+
 new_df <- new_df[-c(1:4,8)]
 setnames(new_df, old = c('pvalue_sig', 'padj_sig', 'pvalue_bulk'), new = c('zscore_sig','zscore_adj_sig','zscore_bulk'))
 rownames(new_df) <- rownames(data)
